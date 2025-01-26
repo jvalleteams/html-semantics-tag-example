@@ -12,7 +12,7 @@
         color: #333;
       }
 
-      .container {
+      .div1 {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         background-color: white;
         width: 80%;
@@ -21,19 +21,19 @@
         overflow: auto;
       }
 
-      .header,
-      .footer {
+      .div2,
+      .div8 {
         background-color: #3c3c3b;
         color: white;
         text-align: center;
         padding: 1rem 0;
       }
 
-      .nav {
+      .div3 {
         background-color: #555;
         padding: 0.5rem 0;
       }
-      .nav ul {
+      .div3 ul {
         list-style: none;
         padding: 0;
         margin: 0;
@@ -41,17 +41,17 @@
         justify-content: center;
         align-items: center;
       }
-      .nav ul li {
+      .div3 ul li {
         margin: 0 10px;
       }
-      .nav a {
+      .div3 a {
         color: white;
         text-decoration: none;
         padding: 5px 20px;
         border-radius: 20px;
         transition: background-color 0.3s;
       }
-      .nav a:hover {
+      .div3 a:hover {
         background-color: #777;
       }
 
@@ -60,12 +60,12 @@
         padding: 20px;
       }
 
-      .main {
+      .div4 {
         flex: 3;
         margin-right: 20px;
       }
 
-      .section {
+      .div5 {
         background-color: #f9f9f9;
         padding: 1rem;
         border-radius: 5px;
@@ -73,7 +73,7 @@
         margin-bottom: 20px;
       }
 
-      .article {
+      .div6 {
         background-color: #e7e7e7;
         margin-bottom: 20px;
         padding: 1rem;
@@ -81,7 +81,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      .aside {
+      .div7 {
         flex: 1;
         background-color: #d7d7d7;
         padding: 1rem;
@@ -89,7 +89,7 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       }
 
-      .footer {
+      .div8 {
         margin-top: 20px;
         background-color: #3c3c3b;
       }
@@ -102,22 +102,22 @@
         .content-wrapper {
           flex-direction: column;
         }
-        .main {
+        .div4 {
           margin-right: 0;
         }
-        .section,
-        .aside {
+        .div5,
+        .div7 {
           width: auto;
         }
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <div class="header">
+    <div class="div1">
+      <div class="div2">
         <h1><span class="non-string">ノン</span>セマンティックHTML</h1>
 
-        <div class="nav">
+        <div class="div3">
           <ul>
             <li><a href="#">ホーム</a></li>
             <li><a href="#">記事</a></li>
@@ -129,20 +129,20 @@
       <!-- 横並びの親要素 -->
       <div class="content-wrapper">
         <!-- メインコンテンツ -->
-        <div class="main">
-          <div class="section">セクション１</div>
-          <div class="section">
+        <div class="div4">
+          <div class="div5">セクション１</div>
+          <div class="div5">
             セクション２
             <!-- 記事を囲むセクション -->
-            <div class="article">
+            <div class="div6">
               <h2>タイトル 1</h2>
               <p>記事１のコンテンツがここに入ります。</p>
             </div>
-            <div class="article">
+            <div class="div6">
               <h2>タイトル 2</h2>
               <p>記事２のコンテンツがここに入ります。</p>
             </div>
-            <div class="article">
+            <div class="div6">
               <h2>タイトル 3</h2>
               <p>記事３のコンテンツがここに入ります。</p>
             </div>
@@ -150,13 +150,13 @@
         </div>
 
         <!-- サイドバー -->
-        <div class="aside">
+        <div class="div7">
           <h2>関連情報</h2>
           <p>ここにはサイドバーの情報や広告などが入ります。</p>
         </div>
       </div>
 
-      <div class="footer">
+      <div class="div8">
         <p>フッター</p>
       </div>
     </div>
