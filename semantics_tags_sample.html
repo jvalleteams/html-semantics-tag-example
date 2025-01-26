@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>セマンティックHTMLの例</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .container {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto;
+        overflow: auto;
+      }
+
+      header,
+      footer {
+        background-color: #3c3c3b;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      nav {
+        background-color: #555;
+        padding: 0.5rem 0;
+      }
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 20px;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        background-color: #777;
+      }
+
+      .content-wrapper {
+        display: flex;
+        padding: 20px;
+      }
+
+      main {
+        flex: 3;
+        margin-right: 20px;
+      }
+
+      section {
+        background-color: #f9f9f9;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+
+      article {
+        background-color: #e7e7e7;
+        margin-bottom: 20px;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      aside {
+        flex: 1;
+        background-color: #d7d7d7;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      footer {
+        margin-top: 20px;
+        background-color: #3c3c3b;
+      }
+
+      @media (max-width: 960px) {
+        .content-wrapper {
+          flex-direction: column;
+        }
+        main {
+          margin-right: 0;
+        }
+        section,
+        aside {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>セマンティックHTML</h1>
+
+        <nav>
+          <ul>
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">記事</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- 横並びの親要素 -->
+      <div class="content-wrapper">
+        <!-- メインコンテンツ -->
+        <main>
+          <section>セクション１</section>
+          <section>
+            セクション２
+            <!-- 記事を囲むセクション -->
+            <article>
+              <h2>タイトル 1</h2>
+              <p>記事１のコンテンツがここに入ります。</p>
+            </article>
+            <article>
+              <h2>タイトル 2</h2>
+              <p>記事２のコンテンツがここに入ります。</p>
+            </article>
+            <article>
+              <h2>タイトル 3</h2>
+              <p>記事３のコンテンツがここに入ります。</p>
+            </article>
+          </section>
+        </main>
+
+        <!-- サイドバー -->
+        <aside>
+          <h2>関連情報</h2>
+          <p>ここにはサイドバーの情報や広告などが入ります。</p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>フッター</p>
+      </footer>
+    </div>
+  </body>
+</html>
